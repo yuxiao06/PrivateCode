@@ -22,7 +22,7 @@
     app:showPaths="true"
     android:background="#1e376b">
 
-    <com.google.androidstudio.motionlayoutexample.utils.BoundsImageView
+    <com.qiyi.video.readerdemo.motion.view.BoundsImageView
         android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

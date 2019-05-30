@@ -1,4 +1,4 @@
-package com.qiyi.video.readerdemo.motion
+package com.qiyi.video.readerdemo.motion.activity
 
 import android.os.Bundle
 import android.support.constraint.motion.MotionLayout
@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import com.qiyi.video.readerdemo.R
+import com.qiyi.video.readerdemo.motion.adapter.FrontPhotosAdapter
 
 class YouTubeDemoActivity : AppCompatActivity() {
 

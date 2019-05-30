@@ -1,4 +1,4 @@
-package com.qiyi.video.readerdemo.motion
+package com.qiyi.video.readerdemo.motion.adapter
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.qiyi.video.readerdemo.R
+import com.qiyi.video.readerdemo.motion.Cats
 
 class FrontPhotosAdapter : RecyclerView.Adapter<YouTubeDemoViewHolder>() {
 
@@ -15,8 +16,8 @@ class FrontPhotosAdapter : RecyclerView.Adapter<YouTubeDemoViewHolder>() {
         val inflater = LayoutInflater.from(parent.context)
         val itemView = inflater.inflate(viewType, parent, false)
         return when (viewType) {
-            R.layout.motion_24_recyclerview_expanded_text_header -> YouTubeDemoViewHolder.TextHeaderViewHolder (itemView)
-            R.layout.motion_24_recyclerview_expanded_text_description -> YouTubeDemoViewHolder.TextDescriptionViewHolder (itemView)
+            R.layout.motion_24_recyclerview_expanded_text_header -> YouTubeDemoViewHolder.TextHeaderViewHolder(itemView)
+            R.layout.motion_24_recyclerview_expanded_text_description -> YouTubeDemoViewHolder.TextDescriptionViewHolder(itemView)
             R.layout.motion_24_recyclerview_expanded_row -> YouTubeDemoViewHolder.CatRowViewHolder(itemView)
             else -> throw IllegalStateException("Unknown viewType $viewType")
         }

@@ -22,13 +22,13 @@
     android:layout_height="match_parent"
     app:layoutDescription="@xml/scene_21_second_fragment">
 
-    <com.google.androidstudio.motionlayoutexample.helpers.FadeIn
+    <com.qiyi.video.readerdemo.motion.view.FadeIn
         android:id="@+id/fadeIn"
         app:onShow="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <com.google.androidstudio.motionlayoutexample.helpers.FadeOut
+    <com.qiyi.video.readerdemo.motion.view.FadeOut
         android:id="@+id/fadeOut"
         app:onHide="true"
         android:layout_width="wrap_content"

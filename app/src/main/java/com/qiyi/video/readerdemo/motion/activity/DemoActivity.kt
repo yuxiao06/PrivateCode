@@ -1,4 +1,4 @@
-package com.qiyi.video.readerdemo.motion
+package com.qiyi.video.readerdemo.motion.activity
 
 import android.os.Build
 import android.os.Bundle

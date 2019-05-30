@@ -1,4 +1,4 @@
-package com.qiyi.video.readerdemo.motion
+package com.qiyi.video.readerdemo.motion.fragment
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -10,6 +10,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.qiyi.video.readerdemo.R
+import com.qiyi.video.readerdemo.motion.User
+import com.qiyi.video.readerdemo.motion.adapter.CustomAdapter
 
 class ListFragment : Fragment() {
 

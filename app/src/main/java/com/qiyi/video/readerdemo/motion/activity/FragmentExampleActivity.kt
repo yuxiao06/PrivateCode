@@ -1,15 +1,16 @@
-package com.qiyi.video.readerdemo.motion
+package com.qiyi.video.readerdemo.motion.activity
 
-import android.app.ListFragment
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.support.constraint.motion.MotionLayout
 import android.support.v4.app.Fragment
-import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.qiyi.video.readerdemo.R
+import com.qiyi.video.readerdemo.motion.fragment.MainFragment
+import com.qiyi.video.readerdemo.motion.fragment.SecondFragment
 import kotlinx.android.synthetic.main.motion_activity.*
 
-class FragmentExample2Activity : AppCompatActivity(), View.OnClickListener, MotionLayout.TransitionListener {
+class FragmentExampleActivity : AppCompatActivity(), View.OnClickListener, MotionLayout.TransitionListener {
     override fun onTransitionChange(p0: MotionLayout?, p1: Int, p2: Int, progress: Float) {
         if (progress - lastProgress > 0) {
             // from start to end
@@ -18,15 +19,16 @@ class FragmentExample2Activity : AppCompatActivity(), View.OnClickListener, Moti
                 val transaction = supportFragmentManager.beginTransaction()
                 transaction
                         .setCustomAnimations(R.animator.show, 0)
-                fragment = com.qiyi.video.readerdemo.motion.ListFragment.newInstance()
+                fragment = SecondFragment.newInstance()
                 transaction
+                        .setCustomAnimations(R.animator.show, 0)
                         .replace(R.id.container, fragment!!)
                         .commitNow()
             }
         } else {
             // from end to start
             val atStart = progress < 0.9f
-            if (atStart && fragment is ListFragment) {
+            if (atStart && fragment is SecondFragment) {
                 val transaction = supportFragmentManager.beginTransaction()
                 transaction
                         .setCustomAnimations(0, R.animator.hide)

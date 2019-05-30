@@ -1,4 +1,4 @@
-package com.qiyi.video.readerdemo.motion
+package com.qiyi.video.readerdemo.motion.adapter
 
 import android.support.constraint.ConstraintLayout
 import android.support.v7.widget.RecyclerView
@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
 import com.qiyi.video.readerdemo.R
+import com.qiyi.video.readerdemo.motion.activity.MotionActivity
+import com.qiyi.video.readerdemo.motion.activity.DemoActivity
 
-class DemosAdapter(private val dataset: Array<DemosAdapter.Demo>) :
+class DemosAdapter(private val dataset: Array<Demo>) :
         RecyclerView.Adapter<DemosAdapter.ViewHolder>() {
 
     data class Demo(val title: String, val description : String, val layout : Int = 0, val activity : Class<*> = DemoActivity::class.java) {
@@ -32,7 +34,7 @@ class DemosAdapter(private val dataset: Array<DemosAdapter.Demo>) :
 
 
     override fun onCreateViewHolder(parent: ViewGroup,
-                                    viewType: Int): DemosAdapter.ViewHolder {
+                                    viewType: Int): ViewHolder {
         val row = LayoutInflater.from(parent.context)
                 .inflate(R.layout.row, parent, false) as ConstraintLayout
         return ViewHolder(row)

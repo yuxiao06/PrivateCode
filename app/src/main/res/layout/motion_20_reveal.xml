@@ -69,7 +69,7 @@
         tools:layout_editor_absoluteX="264dp"
         tools:layout_editor_absoluteY="586dp" />
 
-    <com.google.androidstudio.motionlayoutexample.helpers.ExampleFlyinBounceHelper
+    <com.qiyi.video.readerdemo.motion.view.ExampleFlyinBounceHelper
         android:id="@+id/helper"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

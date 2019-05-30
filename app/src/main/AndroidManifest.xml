@@ -16,13 +16,13 @@
             </intent-filter>
         </activity>
         
-        <activity android:name=".motion.MotionActivity" />
-        <activity android:name=".motion.DemoActivity"/>
-        <activity android:name=".motion.ViewPagerActivity"/>
-        <activity android:name=".motion.ViewPagerActivity2"/>
-        <activity android:name=".motion.FragmentExampleActivity"/>
-        <activity android:name=".motion.FragmentExample2Activity"/>
-        <activity android:name=".motion.YouTubeDemoActivity"/>
+        <activity android:name=".motion.activity.MotionActivity" />
+        <activity android:name=".motion.activity.DemoActivity"/>
+        <activity android:name=".motion.activity.ViewPagerActivity"/>
+        <activity android:name=".motion.activity.ViewPagerActivity2"/>
+        <activity android:name=".motion.activity.FragmentExampleActivity"/>
+        <activity android:name=".motion.activity.FragmentExample2Activity"/>
+        <activity android:name=".motion.activity.YouTubeDemoActivity"/>
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.qiyi.video.readerdemo.motion
+package com.qiyi.video.readerdemo.motion.adapter
 
 import android.graphics.Rect
 import android.support.constraint.motion.MotionLayout
@@ -9,6 +9,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.qiyi.video.readerdemo.R
+import com.qiyi.video.readerdemo.motion.fragment.ItemFragment
+import com.qiyi.video.readerdemo.motion.User
 
 class CustomAdapter(private val userList: ArrayList<User>): RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 

@@ -1,4 +1,4 @@
-package com.qiyi.video.readerdemo.motion
+package com.qiyi.video.readerdemo.motion.fragment
 
 import android.os.Bundle
 import android.support.v4.app.Fragment

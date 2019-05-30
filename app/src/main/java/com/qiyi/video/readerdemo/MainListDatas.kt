@@ -1,6 +1,6 @@
 package com.qiyi.video.readerdemo
 
-import com.qiyi.video.readerdemo.motion.MotionActivity
+import com.qiyi.video.readerdemo.motion.activity.MotionActivity
 
 object MainListDatas {
     val datas: Array<MainListData> = arrayOf(

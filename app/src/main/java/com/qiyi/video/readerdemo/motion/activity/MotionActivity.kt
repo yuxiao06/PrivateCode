@@ -1,4 +1,4 @@
-package com.qiyi.video.readerdemo.motion
+package com.qiyi.video.readerdemo.motion.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.widget.CompoundButton
 import com.qiyi.video.readerdemo.R
+import com.qiyi.video.readerdemo.motion.adapter.DemosAdapter
 import kotlinx.android.synthetic.main.activity_motion.*
 
 class MotionActivity: AppCompatActivity(), CompoundButton.OnCheckedChangeListener {

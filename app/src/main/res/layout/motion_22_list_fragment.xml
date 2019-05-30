@@ -13,19 +13,18 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<com.google.androidstudio.motionlayoutexample.utils.TouchFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.qiyi.video.readerdemo.motion.view.TouchFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:background="@color/colorAccent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/list_scene"
-    tools:context=".fragmentsdemo.MainFragment">
+    app:layoutDescription="@xml/list_scene">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-</com.google.androidstudio.motionlayoutexample.utils.TouchFrameLayout>
+</com.qiyi.video.readerdemo.motion.view.TouchFrameLayout>

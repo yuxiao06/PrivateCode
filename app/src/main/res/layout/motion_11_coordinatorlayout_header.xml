@@ -13,7 +13,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.
   -->
-<com.google.androidstudio.motionlayoutexample.utils.CollapsibleToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+<com.qiyi.video.readerdemo.motion.view.CollapsibleToolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintToolbar"
@@ -89,4 +89,4 @@
         app:layout_constraintTop_toBottomOf="@+id/name" />
 
 
-</com.google.androidstudio.motionlayoutexample.utils.CollapsibleToolbar>
+</com.qiyi.video.readerdemo.motion.view.CollapsibleToolbar>

@@ -1,9 +1,10 @@
-package com.qiyi.video.readerdemo.motion
+package com.qiyi.video.readerdemo.motion.adapter
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
+import com.qiyi.video.readerdemo.motion.Page
 
 class ViewPagerAdapter(fm: FragmentManager?) : FragmentPagerAdapter(fm) {
 
