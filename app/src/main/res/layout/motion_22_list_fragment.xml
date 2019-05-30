@@ -20,7 +20,8 @@
     android:background="@color/colorAccent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layoutDescription="@xml/list_scene">
+    app:layoutDescription="@xml/list_scene"
+    tools:context=".motion.fragment.MainFragment">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/list"

@@ -23,6 +23,7 @@
         <activity android:name=".motion.activity.FragmentExampleActivity"/>
         <activity android:name=".motion.activity.FragmentExample2Activity"/>
         <activity android:name=".motion.activity.YouTubeDemoActivity"/>
+        <activity android:name=".dispatcher.DispatcherActivity"/>
     </application>
 
 </manifest>
