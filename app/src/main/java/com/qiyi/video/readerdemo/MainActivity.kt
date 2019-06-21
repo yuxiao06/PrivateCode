@@ -4,6 +4,8 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
+import com.qiyi.video.readerdemo.plugin.PluginActivity
+import com.qiyi.video.readerdemo.plugin.PluginConfig
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         initList()
+        PluginConfig.putPresenter(PluginActivity::class.java.name, "activity", "com.qiyi.video.readerdemo.PageControllerImpl")
     }
 
     private fun initList() {
