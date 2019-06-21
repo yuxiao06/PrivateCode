@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ReaderDemo</string>
+    <string name="app_name">文学技术库</string>
 
     <string name="title_activity_scrolling">ScrollingActivity</string>
     <string name="large_text">
