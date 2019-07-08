@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.qiyi.video.readerdemo">
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -15,16 +18,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+
         <activity android:name=".motion.activity.MotionActivity" />
-        <activity android:name=".motion.activity.DemoActivity"/>
-        <activity android:name=".motion.activity.ViewPagerActivity"/>
-        <activity android:name=".motion.activity.ViewPagerActivity2"/>
-        <activity android:name=".motion.activity.FragmentExampleActivity"/>
-        <activity android:name=".motion.activity.FragmentExample2Activity"/>
-        <activity android:name=".motion.activity.YouTubeDemoActivity"/>
-        <activity android:name=".dispatcher.DispatcherActivity"/>
-        <activity android:name=".plugin.PluginActivity"/>
+        <activity android:name=".motion.activity.DemoActivity" />
+        <activity android:name=".motion.activity.ViewPagerActivity" />
+        <activity android:name=".motion.activity.ViewPagerActivity2" />
+        <activity android:name=".motion.activity.FragmentExampleActivity" />
+        <activity android:name=".motion.activity.FragmentExample2Activity" />
+        <activity android:name=".motion.activity.YouTubeDemoActivity" />
+        <activity android:name=".dispatcher.DispatcherActivity" />
+        <activity android:name=".plugin.PluginActivity" />
+        <activity android:name=".animation.recyclerview.carousel.CarouselLayoutActivity" />
+        <activity android:name=".animation.recyclerview.circle.CircleLayoutActivity" />
+        <activity android:name=".animation.recyclerview.gallery.GalleryLayoutActivity" />
+        <activity android:name=".animation.recyclerview.rotate.RotateLayoutActivity" />
+        <activity android:name=".animation.recyclerview.scale.ScaleLayoutActivity" />
+        <activity android:name=".animation.recyclerview.VPLMMainActivity" />
+        <activity android:name=".animation.recyclerview.circlescale.CircleScaleLayoutActivity" />
 
     </application>
 
