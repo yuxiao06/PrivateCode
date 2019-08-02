@@ -17,7 +17,7 @@ import java.io.File;
 import dalvik.system.DexClassLoader;
 
 public class PlugResourceUtils {
-    public static Resources getPluginResources(Context context,String apkPath) {
+    public static Resources getPluginResources(Context context, String apkPath) {
         try {
             PackageManager packageManager = context.getPackageManager();
             PackageInfo packageInfo = packageManager.getPackageArchiveInfo(apkPath, PackageManager.GET_ACTIVITIES);
@@ -32,22 +32,11 @@ public class PlugResourceUtils {
         return null;
     }
 
-    public static View getPlugView(String viewName, String type, String packageName, Context context,String apkPath) {
-        Resources resources = getPluginResources(context,apkPath);
+    public static View getPlugView(String viewName, String type, String packageName, Context context, Resources resources) {
         int id = resources.getIdentifier(viewName, type, packageName);
         XmlPullParser xmlPullParser = resources.getLayout(id);
         View view = LayoutInflater.from(context).inflate(xmlPullParser, null);
         return view;
-    }
-
-    public static Class loadClass(String className, Context context,String apkPath) throws ClassNotFoundException {
-        String dexPathD = context.getFilesDir().getPath() + PluginConfig.optimizedDirectory;
-        File file = new File(dexPathD);
-        if (!file.exists()) {
-            file.mkdirs();
-        }
-        DexClassLoader classLoader = new DexClassLoader(apkPath, dexPathD, null, PlugResourceUtils.class.getClassLoader());
-        return classLoader.loadClass(className);
     }
 
 }

@@ -6,6 +6,8 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
 
+import com.qiyi.video.readerdemo.plugin.utils.PlugResourceUtils;
+
 
 public class DataProvideInterface {
 
@@ -14,17 +16,6 @@ public class DataProvideInterface {
     }
 
     public static Resources getPluginResources(Context context) {
-        try {
-            PackageManager packageManager = context.getPackageManager();
-            PackageInfo packageInfo = packageManager.getPackageArchiveInfo(getPlugPath(context), PackageManager.GET_ACTIVITIES);
-            ApplicationInfo applicationInfo = packageInfo.applicationInfo;
-            applicationInfo.sourceDir = getPlugPath(context);
-            applicationInfo.publicSourceDir = getPlugPath(context);
-            Resources resources = packageManager.getResourcesForApplication(applicationInfo);
-            return resources;
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
+        return PlugResourceUtils.getPluginResources(context, getPlugPath(context));
     }
 }
