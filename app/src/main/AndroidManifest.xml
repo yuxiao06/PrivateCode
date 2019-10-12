@@ -4,6 +4,7 @@
     package="com.qiyi.video.readerdemo">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -35,6 +36,8 @@
         <activity android:name=".animation.recyclerview.scale.ScaleLayoutActivity" />
         <activity android:name=".animation.recyclerview.VPLMMainActivity" />
         <activity android:name=".animation.recyclerview.circlescale.CircleScaleLayoutActivity" />
+        <activity android:name=".viewDragHelper.activity.ViewDragActivity" />
+        <activity android:name=".viewDragHelper.activity.ViewUnlockActivity" />
 
     </application>
 
